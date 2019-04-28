@@ -1,0 +1,22 @@
+.section2 {
+    max-width: 100%;
+    margin-top: 2%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        iframe {
+            width: 53%;
+            height: 500px;
+        }
+}
+
+.video-footer {
+    max-width: 100%;
+    font-family: $main-font;
+    color: $info-font-color;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-left: 11.5%;
+}

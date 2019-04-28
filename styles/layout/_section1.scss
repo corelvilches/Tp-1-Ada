@@ -1,0 +1,13 @@
+.section1 {
+    max-width: 100%;
+    margin-top: 2%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .img-section {
+            width: 25%;
+            border-radius: 15%;
+            padding: 0% 0.5%;
+        }
+}

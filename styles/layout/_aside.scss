@@ -1,0 +1,39 @@
+.section-aside {
+    max-width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $main-font;
+    box-sizing: border-box;
+    padding-left: 1em;
+    position: relative;        
+
+        img {
+            width: 60%;
+            border-radius: 50%;
+        }
+        
+        h2 {
+            margin-bottom: 1px;
+        }
+        .personal-info {
+            width: 100%;
+            margin: 0%;
+            background-color: $info-color;
+            display: flex;
+            justify-content: center;
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .info {
+            margin: 1em;
+            text-align: center;
+            color: $info-font-color;
+            font-weight: bold;
+            font-size: 14px;
+            
+        }
+}
