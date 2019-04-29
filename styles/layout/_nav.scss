@@ -1,14 +1,97 @@
+.menu-mobile{
+    display: none;
+    list-style: none;
+    text-align: center;
+    font-family: $main-font;
+    color: white;
+    font-weight: bold;
+    font-size: $main-font-size;
+    background-color: $blog-font-color;
+    width: 80%;
+    padding: 0.5em 7em;
+    margin: 1em auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    }
 nav {
     ul {
         list-style: none;
         width: 100%;
         display: flex;
         justify-content: center;
+        text-align: center;
         padding: 0;
+        z-index: 1;
         li {
-            padding-right: 2em;
-            padding-left: 1em;
+            padding-right: 1.5em;
+            padding-left: 1.5em;
+            text-align: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .platos {
+            &:hover {
+                .menu-item {
+                display: block;
+                text-align: center;
+                position: absolute;
+                background-color: #f8f8f8;
+                max-width: 8em;
+                left: 41%;
+                
+                li {
+                    padding-right: 2em;
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                }
+            }
+               } 
+        }
+        .menu-item {
+            list-style: none;
+            display: none;
+           
         }
     }
 
 }
+@media all and (max-width: 520px) {
+    .nav-font{
+        display: none;
+    }
+    .menu{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0;
+        &:hover {
+            display: flex;
+            flex-direction: column;
+            .menu-mobile{
+                color: black;
+            }
+            .nav-font{
+                margin-top: 0;
+                position: absolute;
+                background-color: #fa7855;
+                top: 3em;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: center;         
+                max-width: 40%;
+                padding-bottom: 0.5em;
+                .platos li{
+                    color:#868c93;
+                }
+            }
+        }
+    }
+    .menu-mobile{
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        }   
+    }    

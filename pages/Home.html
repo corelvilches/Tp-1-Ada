@@ -26,9 +26,16 @@
     NAVIGATION BAR SECTION
     ====================-->
         <nav class="menu">
+            <li class="menu-mobile"> <i class="fas fa-bars"></i> MENU</li>
             <ul class="nav-font">
                 <li>HOME</li>
-                <li>PLATOS <i class="fas fa-caret-down"></i> </li>
+                <li class="platos">PLATOS <i class="fas fa-caret-down"></i> 
+                    <ul class="menu-item">
+                        <li>Ensalada</li>
+                        <li>Carne</li>
+                        <li>Helado</li>
+                    </ul>
+                </li>
                 <li>SOBRE MI</li>
                 <li>CONTACTO</li>
             </ul>
@@ -37,26 +44,57 @@
     BANNER SECTION
     =================-->
         <div class="banner">
-            <img class="img-size" src="../images/img-1.jpg"/>
-            <img class="img-size" src="../images/img-2.jpg"/>
-            <img class="img-size" src="../images/img-3.jpg"/>
-            <img class="img-size" src="../images/img-4.jpg"/>
+            <div class="banner-container image1">
+                <img class="img-size" src="../images/img-1.jpg"/>
+                <span class="banner-date">Diciembre 23, 2017 | 21 comentarios</span>
+                <h3 class="banner-info">"Unas tostadas sabrosas para arrancar bien el dia"</h3>
+            </div>
+            <div class="banner-container image2">
+                <img class="img-size" src="../images/img-2.jpg"/>
+                <span class="banner-date">Diciembre 23, 2017 | 21 comentarios</span>
+                <h3 class="banner-info">"Unas tostadas sabrosas para arrancar bien el dia"</h3>
+            </div>
+            <div class="banner-container image3">
+                <img class="img-size" src="../images/img-3.jpg"/>
+                <span class="banner-date">Diciembre 23, 2017 | 21 comentarios</span>
+                <h3 class="banner-info">"Unas tostadas sabrosas para arrancar bien el dia"</h3>
+            </div>
+            <div class="banner-container image4">
+                <img class="img-size" src="../images/img-4.jpg"/>
+                <div class="caption-bg">
+                    <span class="banner-date">Diciembre 23, 2017 | 21 comentarios </span></br>
+                    <h3 class="banner-info">"Unas tostadas sabrosas para arrancar bien el dia"</h3>
+                </div>
+            </div>
         </div>
+    <!--=============
+        INFO-SECTION
+    ===============-->
         <div class="section1">
-            <img class="img-section" src="../images/platos.jpeg" alt="">
-            <img class="img-section" src="../images/recetas.JPG" alt="">
-            <img class="img-section" src="../images/exoticos.JPG" alt=""> 
+            <div class="img-container">
+                <img class="img-section" src="../images/platos.jpeg" alt="">
+                <div class="text-button">PLATOS</div>
+            </div>
+            <div class="img-container">
+                <img class="img-section" src="../images/recetas.JPG" alt="">
+                <div class="text-button">RECETAS</div>
+            </div>
+            <div class="img-container">
+                <img class="img-section" src="../images/exoticos.JPG" alt="">
+                <div class="text-button">EXOTICOS</div>
+            </div>
         </div>
     <!--===================
     YOUTUBE & ASIDE SECTION
     =====================-->
+    <div class="mobile-container">
         <div class="section2">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/MaFavMaykvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
             <aside class="section-aside">
                 <p class="personal-info">SOBRE MI</p>
                 <img src="../images/monday.jpg" alt="">
                 <h2> Doriana Cruz </h2>
-                <p class="info">Tengo 23 años, hace 2 que estudio cocina y soy fanatica de la comida, espero que les guste mi contenido. </p>
+                <p class="info">Tengo 23 años, hace dos que estudio cocina y soy fanatica de la comida, espero que les guste mi contenido. </p>
                 <p class="personal-info">NEWSLETTER</p>
             </aside>
         </div>
@@ -69,24 +107,34 @@
                     <span class="border-article"></span>
                     <img src="../images/nota1.JPG" alt="">
                 <div class="article-preview">
-                    <p>By Doriana | Mayo 19, 2017</p>
-                    <p><i class="far fa-heart"></i>20 &nbsp;&nbsp;&nbsp;<i class="far fa-comment"></i>10 &nbsp;&nbsp;&nbsp; <i class="fas fa-share-alt"></i></p>
-                    <h3 class="article-black-title">Delicias Dulces</h3>
-                    <a>En este articulo van a poder ver una receta muy simple, sana y muy rica!</a>
-                    <p class="article-black-title">Leer mas</p>
+                    <div class="info-note">
+                        <span class="date">By Doriana | Mayo 19, 2017</span>
+                        <span class="likes"><i class="far fa-heart"></i>20 &nbsp;&nbsp;<i class="far fa-comment"></i>10&nbsp;&nbsp; <i class="fas fa-share-alt"></i></span>
+                    </div>
+                        <h3 class="article-black-title">&nbsp;Delicias Dulces</h3>
+                        <a>En este articulo van a poder ver una receta muy simple, sana y muy rica!</a>
+                        </br>
+                        </br>
+                        <span class="button">Leer mas</span>
                 </div>
             </div>
-            <div class="article2">
+            <div class="article1 article2">
                     <span class="border-article"></span>
-                    <img src="../images/nota2.JPG" alt="">
+                    <img class="note2" src="../images/nota2.JPG" alt="">
                 <div class="article-preview">
-                    <p>By Doriana | Mayo 19, 2017</p>
-                    <p><i class="far fa-heart"></i>43 &nbsp;&nbsp;&nbsp;<i class="far fa-comment"></i>70 &nbsp;&nbsp;&nbsp; <i class="fas fa-share-alt"></i></p>
-                    <h3 class="article-black-title">Comidas Simples</h3>
-                    <a>En este articulo van a poder ver una receta muy simple, sana y muy rica!</a>
-                    <p class="article-black-title">Leer mas</p>
+                    <div class="info-note">
+                        <span class="date">By Doriana | Mayo 19, 2017</span>
+                        <span class="likes"><i class="far fa-heart"></i>40 &nbsp;&nbsp;<i class="far fa-comment"></i>70&nbsp;&nbsp; <i class="fas fa-share-alt"></i></span>
+                    </div>
+                        <h3 class="article-black-title">&nbsp;Delicias Dulces</h3>
+                        <a>En este articulo van a poder ver una receta muy simple, sana y muy rica!</a>
+                        </br>
+                        </br>
+                        <span class="button">Leer mas</span>
                 </div>
             </div>
+            </div>
+            </div><!--Cierre de Mobile Container que me permite reordenar la seccion de info del autor al final de la pagina.-->
         </div>
     </div>
 </body>

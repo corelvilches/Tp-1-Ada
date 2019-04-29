@@ -20,3 +20,9 @@
     padding-top: 0.5em;
     padding-left: 11.5%;
 }
+@media all and (max-width: 520px) {
+    .section2 iframe, .video-footer {
+        display: none;
+    }
+
+}

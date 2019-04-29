@@ -19,7 +19,7 @@
         }
         .personal-info {
             width: 100%;
-            margin: 0%;
+            margin: 0;
             background-color: $info-color;
             display: flex;
             justify-content: center;
@@ -36,4 +36,18 @@
             font-size: 14px;
             
         }
+}
+@media all and (max-width: 520px) {
+        .mobile-container {
+        display: flex;
+        flex-direction: column;
+
+        .section-aside{
+            max-width: 80%;
+            order: 3;
+        }
+        .article-container{
+            order: 2;
+        }
+    }
 }

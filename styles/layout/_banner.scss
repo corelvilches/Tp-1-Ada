@@ -1,10 +1,87 @@
+@media all and (min-width: 521px) {
 .banner {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
     
-    .img-size {
-        width: 24%;
-        height: 20%;
+    .banner-container {
+        max-width: 24%;
+        position: relative;
+            &:hover {
+                .caption-bg {
+                    display: block;
+                    height: 20%;
+                    bottom: 4px;
+                    padding-top: 6%;
+                    padding-bottom: 6%;
+                    transform: linear;
+                }
+            }
+            
+            }
     }
+
+    .img-size {
+        max-width: 100%;
+        position: relative;
+        }
+
+        .caption-bg {
+            background-color: rgba(250,120,85,0.4);
+            width: 100%;
+            height: 0;
+            position: absolute;
+            bottom: 4px;
+            box-sizing: border-box;
+            padding-top: 0%;
+            padding-bottom:0;
+            padding-left: 5%;
+            display: block;
+            overflow: hidden;
+            transition: 0.5s;
+            }
+            
+        
+            .banner-date {
+                position: absolute;
+                justify-content: baseline;
+                min-width: 80%;
+                font-family: $main-font;
+                color: white;
+                font-size: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .banner-info {
+                position: absolute;
+                max-width: 80%;
+                font-family: $main-font;
+                color: white;
+                font-size: 13px;
+                margin-top: 1em;
+            }
+        }
+@media all and (max-width: 520px) {
+    .banner{
+
+        .banner-container {
+        max-width: 100%;
+        position: relative;
+    }
+    .img-size{
+        max-width: 100%;
+    }
+        .image1{
+            max-width: 100%;
+        }
+
+        .image2, .image3, .image4 {
+        display: none;
+    }
+    .banner-info, .banner-date {
+        display: none;
+    }
+    
+    }   
 }

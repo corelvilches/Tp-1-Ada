@@ -3,55 +3,98 @@
     margin-top: 5%;
     padding-left: 11.5%;
 
+    .border-article{
+            display: block;
+            width: 60%;
+            border-top: 1.5px solid rgb(224, 224, 224);
+            margin-bottom: 2em;    
+
+        }
+
         img {
             max-width: 25%;
             border-radius: 15%;
             float: left;
         }
 
+        .note2{
+            clear: left;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
         .article1{
             max-width: 100%;
+            margin-bottom: 18em;
 
             .article-preview {
                 max-width: 35%;
+                margin-top: 0;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                box-sizing: border-box;
                 float: left;
+                flex-direction: column;
+                box-sizing: border-box;
                 padding-left: 2em;
                 font-family: $main-font;
                 color: $info-font-color;
                 font-weight: bold;
                 font-size: 14px;
+                position: relative;
 
-                    .article-black-title {
-                        color: black;
-            }
+                .info-note {
+                    display: flex;
+                    justify-content: space-between;                
+
+                .date{
+                    max-width: 50%;
+                }
+
+                    .likes {
+                        max-width: 35%;
+                    }
+                }
+                .article-black-title {
+                     color: black;
+
+                    }
+
+                .button{
+                    max-width: 30%;
+                    background-color: $info-color;
+                    padding: 0.5em;
+                    text-align: center;
+                    color: $info-font-color;
+                    font-weight: bold;                        font-size: 13px;
+                    border-radius: 10px;
+                    color: black;
+                    }
         }
     }
-
-    //article2//
-    .article2 {
-        max-width: 100%;
-        clear: both;
-
-            .article-preview {
-                max-width: 35%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                box-sizing: border-box;
-                float: left;
-                padding-left: 2em;
-                font-family: $main-font;
-                color: $info-font-color;
-                font-weight: bold;
-                font-size: 14px;
-
-                    .article-black-title {
-                        color: black;
+}
+@media all and (max-width: 520px) {
+    .article-container {
+        img {
+             display: none;
+        }
+        .note2, .article2 {
+            display: none;
+        }
+        .border-article{
+            border-top: 0.5px solid rgb(224, 224, 224);
+        }
+        .article1 {
+            .article-preview{
+                max-width: 80%;
+                margin-left: 0;
+                text-align: center;
+                align-items: center;
+                
+                .button{
+                    padding: 1em 2.5em;
+                }
             }
         }
+        
     }
 }
