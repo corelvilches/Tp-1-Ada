@@ -41,6 +41,7 @@
         .mobile-container {
         display: flex;
         flex-direction: column;
+        order: 3;
 
         .section-aside{
             max-width: 80%;

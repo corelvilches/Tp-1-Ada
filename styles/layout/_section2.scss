@@ -21,6 +21,9 @@
     padding-left: 11.5%;
 }
 @media all and (max-width: 520px) {
+    .section2{
+        order: 3;
+    }
     .section2 iframe, .video-footer {
         display: none;
     }
